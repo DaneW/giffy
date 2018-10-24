@@ -34,7 +34,7 @@ func NewClient() *Client {
 	c := &Client{
 		apiKey: util.Env("GIPHY_API_KEY", PublicBetaAPIKey),
 		rating: util.Env("GIPHY_RATING", "g"),
-		limit:  util.EnvInt("GIPHY_LIMIT", 1),
+		limit:  util.EnvInt("GIPHY_LIMIT", 25),
 		baseURL: &url.URL{
 			Scheme: util.Env("GIPHY_BASE_URL_SCHEME", "https"),
 			Host:   util.Env("GIPHY_BASE_URL_HOST", "api.giphy.com"),
