@@ -1,4 +1,4 @@
-[![wercker status](https://app.wercker.com/status/59d57ea64a657bfeae067b54dad17823/s/master "wercker status")](https://app.wercker.com/project/byKey/59d57ea64a657bfeae067b54dad17823)
+[![wercker status](https://app.wercker.com/status/a9b45b5be846645ef162f4e0925faeb6/s/master "wercker status")](https://app.wercker.com/project/byKey/a9b45b5be846645ef162f4e0925faeb6)
 # Giffy
 This repository cotains the documentation and source for a coding assesment.   
 
