@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 class Search extends Component {
   static propTypes = {
     isOpen: PropTypes.bool,
-    toggle: PropTypes.func,
     search: PropTypes.func,
   }
 
@@ -30,7 +29,7 @@ class Search extends Component {
   }
 
   render() {
-    const { isOpen, toggle } = this.props;
+    const { isOpen } = this.props;
     const searchStyle = isOpen ? "search" : "search close";
     return (
       <div className={searchStyle}>

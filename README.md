@@ -13,9 +13,13 @@ Create a web app that allows you to search with a list of tag words to display a
 - [ ] Clicking on a GIF should bring that item into focus and display more information
 - [x] Provide the ability to rank / rate the GIFs and sort by highest rank.
 - [x] The specific UI is up to you. Bonus points for awesome stuff you bake into the app.
-- [ ] Provide specific instructions for installing. For example, if you are using a specific
+- [x] Provide specific instructions for installing. For example, if you are using a specific
 library, please call that out, so we know to install them.
 - [ ] Testing is something SoapBox takes seriously. You should too.
+- [x] This is your IP, If you make an awesome GIF Search App, show the world.
+- [x] Make ranking persist beyond a local device
+- [ ] Use Ember
+- [x] Use some fancy animations
 
 ## Getting Started
 To run the application you need to run both the Giffy service and UI.   

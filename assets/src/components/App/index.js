@@ -85,7 +85,6 @@ class App extends Component {
       <Search 
         search={this.handleSearch} 
         isOpen={searchOpen} 
-        toggle={this.toggleSearch} 
       />
       </div>
       );
