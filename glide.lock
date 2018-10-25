@@ -1,10 +1,12 @@
-hash: b89e77167a9ac67609e159a3ff05d13f3691d345799e474bef20ab8613d91ce8
-updated: 2018-10-24T15:49:42.471572-04:00
+hash: f071fdf3d25b8c1691caa0b8fc65550d8d4ce791bba2a1da80be7d8b8c189d8c
+updated: 2018-10-25T00:58:16.27725-04:00
 imports:
 - name: github.com/codegangsta/negroni
   version: f47ab9aeed15a68d07144eddb43bc27ddee6274b
 - name: github.com/gorilla/mux
   version: deb579d6e030503f430978ee229008b9bc912d40
+- name: github.com/rs/cors
+  version: 9a47f48565a795472d43519dd49aac781f3034fb
 - name: github.com/unrolled/render
   version: b9786414de4d903830df7ac38eea68a0e3267a35
 testImports: []

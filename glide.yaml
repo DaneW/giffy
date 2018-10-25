@@ -3,3 +3,5 @@ import:
 - package: github.com/codegangsta/negroni
 - package: github.com/gorilla/mux
 - package: github.com/unrolled/render
+- package: github.com/rs/cors
+  version: v1.6.0
