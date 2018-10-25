@@ -42,8 +42,8 @@ build:
         name: npm install
         code: |
           cd assets
-          yarn -v
-          yarn
+          npm -v
+          npm install
     - script:
         name: go build
         code: |
@@ -52,7 +52,7 @@ build:
         name: react build
         code: |
           cd assets
-          yarn build
+          npm run build
     - script:
         name: copy files to wercker output
         code: |

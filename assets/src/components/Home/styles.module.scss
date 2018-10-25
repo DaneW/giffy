@@ -1,0 +1,18 @@
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 60px;
+} 
+
+.search {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  cursor: pointer;
+  svg {
+    height: 40px;
+    width: 40px;
+  }
+}

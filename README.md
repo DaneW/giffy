@@ -9,15 +9,13 @@ Giffy is a GIF explorer, which allows your to curate through GIFs from Giphy's A
 Create a web app that allows you to search with a list of tag words to display a list of GIFs. Clicking one of the GIFs in the list should bring that item into focus, providing it's details. There also should be way to rank/rate items and sort them by their ranks.
 
 ## Requirements
-- [ ] Use Giphy’s API to search for tags and display a list of GIFs. The API is paged, so I would anticipate some way of handling multi-paged items.
+- [x] Use Giphy’s API to search for tags and display a list of GIFs. The API is paged, so I would anticipate some way of handling multi-paged items.
 - [ ] Clicking on a GIF should bring that item into focus and display more information
-- [ ] Provide the ability to rank / rate the GIFs and sort by highest rank.
-- [ ] The specific UI is up to you. Bonus points for awesome stuff you bake into the app.
+- [x] Provide the ability to rank / rate the GIFs and sort by highest rank.
+- [x] The specific UI is up to you. Bonus points for awesome stuff you bake into the app.
 - [ ] Provide specific instructions for installing. For example, if you are using a specific
 library, please call that out, so we know to install them.
-- [ ] Build it using a JavaScript Framework of your choice.
 - [ ] Testing is something SoapBox takes seriously. You should too.
-- [ ] This is your IP, If you make an awesome GIF Search App, show the world.   
 
 ## Getting Started
 To run the application you need to run both the Giffy service and UI.   

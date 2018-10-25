@@ -1,0 +1,35 @@
+.image {
+  position: relative;
+  flex: auto;
+  height: 250px;
+  min-width: 150px;
+  margin: 0 8px 8px 0;
+  img {
+    height: 100%;
+    min-width: 100%;
+  }
+  span {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    button {
+      width: 40px;
+      height: 40px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      &:first-child {
+        margin-right: 10px;
+      }
+      &:focus {
+        outline: none;
+      }
+      svg {
+        width: 24px;
+        height: 24px;
+        fill: white;
+        stroke: black;
+      }
+    }
+  }
+}

@@ -1,0 +1,170 @@
+.App {
+  height: 100%;
+  position: relative;
+  perspective: 1000px;
+  
+  .frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+    background-size: 100% auto;
+    z-index: 0;
+
+    transition: transform 0.7s;
+    transition-timing-function: cubic-bezier(0.4, 1, 0.3, 1);
+    
+    &:first-child {
+      background-image: url(https://media1.giphy.com/media/l0HlvtIPzPdt2usKs/giphy_s.gif?cid=e1bb72ff5bd0a4b74d58564563fe8044);
+    }
+    &:nth-child(2) {
+      background-image: url(https://media1.giphy.com/media/vQqeT3AYg8S5O/giphy_s.gif?cid=e1bb72ff5bd0a4b74d58564563fe8044);
+    }
+    &:nth-child(3) {
+      background-image: url(https://media0.giphy.com/media/oYtVHSxngR3lC/giphy_s.gif?cid=e1bb72ff5bd0a4b74d58564563fe8044);
+    }
+    &:nth-child(4) {
+      background-image: url(https://media3.giphy.com/media/xT77XWum9yH7zNkFW0/giphy_s.gif?cid=e1bb72ff5bd0a4b74d58564563fe8044);
+    }
+
+    &.move {
+      transition-duration: 1.5s;
+      transform: translate3d(0, 0, -600px);
+      pointer-events: none;
+      overflow: hidden;
+
+      &:first-child {
+        transform: translate3d(-20%, 100%, -3000px) rotate3d(0,0,1, -22deg);
+	      transition-duration: 1.8s;
+      }
+      &:nth-child(2) {
+        transform: translate3d(100%, 15%, -3500px) rotate3d(0,0,1, 30deg);
+	      transition-duration: 2s;
+      }
+      &:nth-child(3) {
+        transform: translate3d(-160%, 0%, -4500px) rotate3d(0,0,1, 10deg);
+	      transition-duration: 2.3s;
+      }
+      &:nth-child(4) {
+        transform: translate3d(-70%, -150%, -5000px) rotate3d(0,0,1, -10deg);
+	      transition-duration: 1.7s;
+      }
+      &:nth-child(5) {
+        transform: translate3d(0, 0, -2500px) rotate3d(0,0,1, 3deg);
+      }
+    }
+  }
+
+  .search {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+
+    button {
+      text-decoration: none;
+      outline: none;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      border: none;
+      background: none;
+      position: absolute;
+      top: 1.25em;
+      right: 1.25em;
+      
+      svg {
+        font-size: 1.5em;
+        height: 4rem;
+        width: 4rem;
+        opacity: 1;
+        transform: scale3d(1, 1, 1); 
+        transition: opacity 0.5s, transform 0.5s;
+        transition-timing-function: cubic-bezier(0.4, 1, 0.3, 1);
+        fill: #5c32f2;
+      }
+      
+      &:focus {
+        outline: none;
+      }
+    }
+
+    form {
+      margin: 0 auto;
+      padding: 0 1em;
+      opacity: 1;
+      transform: translate3d(0,0,0);
+      transition: opacity 1.2s, transform 1.2s;
+      transition-delay: 0.3s;
+      transition-timing-function: cubic-bezier(0.4, 1, 0.3, 1);
+
+      input {
+        border: 0;
+        background: transparent;
+        border-radius: 0;
+        -webkit-appearance: none;
+        font-family: inherit;
+        font-size: 7vw;
+        line-height: 1;
+        display: inline-block;
+        box-sizing: border-box;
+        width: 75%;
+        max-width: 900px;
+        padding: 0 0 0.1em;
+        color: #5c32f2;
+        border-bottom: 6px solid;
+        &::-webkit-search-cancel-button {
+          display: none;
+        }
+        &::-webkit-input-placeholder {
+          color: #5c32f2;
+        }
+        &::-moz-placeholder {
+          opacity: 1;
+          color: #5c32f2;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+      span {
+        font-size: 1rem;
+        font-weight: bold;
+        display: block;
+        width: 75%;
+        margin: 0 auto;
+        padding: 0.85em 0;
+        text-align: right;
+        color: #5c32f2;
+      }
+    }
+
+    &.close {
+      pointer-events: none;
+      opacity: 0;
+      transform: scale3d(0.8, 0.8, 1);
+      transition: opacity 0.5s, transform 0.5s;
+
+      button {
+        svg {
+          opacity: 0;
+          transform: scale3d(0.8, 0.8, 1);
+        }
+      }
+
+      form {
+        opacity: 0;
+	      transform: translate3d(0,0,600px);
+      }
+    }
+  }
+}

@@ -7,6 +7,7 @@ import (
 	"github.com/codegangsta/negroni"
 	"github.com/danew/giffy/util"
 	"github.com/gorilla/mux"
+	"github.com/rs/cors"
 	"github.com/unrolled/render"
 )
 
@@ -18,7 +19,10 @@ func NewServer() *negroni.Negroni {
 		IndentJSON: true,
 	})
 
+	c := cors.AllowAll()
+
 	n := negroni.Classic()
+	n.Use(c)
 	mx := mux.NewRouter().StrictSlash(true)
 
 	repo := initRepository()
