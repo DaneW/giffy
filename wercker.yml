@@ -38,21 +38,12 @@ build:
           go get -u github.com/Masterminds/glide
           export PATH=$WERCKER_SOURCE_DIR/bin:$PATH
           glide install
-    - script:
-        name: npm install
-        code: |
-          cd assets
-          npm -v
-          npm install
+
     - script:
         name: go build
         code: |
           go build
-    - script:
-        name: react build
-        code: |
-          cd assets
-          npm run build
+
     - script:
         name: copy files to wercker output
         code: |
